@@ -65,7 +65,7 @@ if __name__=="__main__":
 
                 tv.appendChild(programme)
 
-    with open("CCTV_EPG.xml","w") as f:
+    with open("epg.xml","w") as f:
         repl = lambda x: ">%s</" % x.group(1).strip() if len(x.group(1).strip()) != 0 else x.group(0)
         pretty_str = re.sub(r'>\n\s*([^<]+)</', repl, tvdoc.toprettyxml(indent="\t",encoding="UTF-8"))
         f.write(pretty_str)
