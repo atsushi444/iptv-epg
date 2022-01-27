@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv date="20211201055829 +0800" generator-info-name="epg.pm" generator-info-url="https://epg.pm" source-info-name="Global EPG" source-info-url="https://epg.pm/xmltv/">
+  </channel>
+  <channel id="1">
+    <display-name lang="zh">彩虹e台  </display-name>
+  </channel>
+  <channel id="2">
+    <display-name lang="zh">彩虹電影台  </display-name>
+  </channel>
+  <channel id="3">
+    <display-name lang="zh">K 頻道  </display-name>
+  </channel>
+  <channel id="4">
+    <display-name lang="zh">驚豔成人電影台  </display-name>
+  </channel>
+  <channel id="5">
+    <display-name lang="zh">香蕉台  </display-name>
+  </channel>
+  <channel id="6">
+    <display-name lang="zh">潘朵啦高畫質粉紅台  </display-name>
+  </channel>
+  <channel id="7">
+    <display-name lang="zh">潘朵啦高畫質玩美台  </display-name>
+  </channel>
+  <channel id="8">
+    <display-name lang="zh">JStar極限台電影頻道  </display-name>
+  </channel>
+  <channel id="9">
+    <display-name lang="zh">松視1台  </display-name>
+  </channel>
+  <channel id="10">
+    <display-name lang="zh">松視2台  </display-name>
+  </channel>
+  <channel id="11">
+    <display-name lang="zh">松視3台  </display-name>
+  </channel>
+  <channel id="12">
+    <display-name lang="zh">松視4台  </display-name>
+  </channel>
+  <channel id="13">
+    <display-name lang="zh">Happy  </display-name>
+  </channel>
+  <channel id="14">
+    <display-name lang="zh">Hot  </display-name>
