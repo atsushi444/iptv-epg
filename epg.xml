@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tv date="20211201055829 +0800" generator-info-name="epg.pm" generator-info-url="https://epg.pm" source-info-name="Global EPG" source-info-url="https://epg.pm/xmltv/">
-  </channel>
   <channel id="1">
     <display-name lang="zh">彩虹e台  </display-name>
   </channel>
@@ -46,22 +45,13 @@
   <programme channel="2589" start="20211201000000 +0800" stop="20211201003000 +0800">
     <title lang="zh">财经新闻通</title>
     <date>20211201</date>
-    <audio>
-      <stereo>stereo</stereo>
-    </audio>
   </programme>
   <programme channel="2589" start="20211201003000 +0800" stop="20211201013000 +0800">
     <title lang="zh">国际财经脉动</title>
     <date>20211201</date>
-    <audio>
-      <stereo>stereo</stereo>
-    </audio>
   </programme>
   <programme channel="3976" start="20211203153000 +0800" stop="20211204000000 +0800">
     <title lang="zh">Pastor Robert Morris Ministries</title>
     <date>20211203</date>
-    <audio>
-      <stereo>stereo</stereo>
-    </audio>
   </programme>
 </tv>
