@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="skyperfect.co.jp">
+<channels>
+    <channel lang="ja" xmltv_id="ＷＯＷＯＷプライム" site_id="/premium/channel:621">ＷＯＷＯＷプライム</channel>
+    <channel lang="ja" xmltv_id="ＷＯＷＯＷライブ" site_id="/premium/channel:622">ＷＯＷＯＷライブ</channel>
+    <channel lang="ja" xmltv_id="ＷＯＷＯＷシネマ" site_id="/premium/channel:623">ＷＯＷＯＷシネマ</channel>
+    <channel lang="ja" xmltv_id="スターチャンネル１" site_id="/premium/channel:625">スターチャンネル１</channel>
+    <channel lang="ja" xmltv_id="スターチャンネル２" site_id="/premium/channel:626">スターチャンネル２</channel>
+    <channel lang="ja" xmltv_id="スターチャンネル３" site_id="/premium/channel:627">スターチャンネル３</channel>
+    <channel lang="ja" xmltv_id="衛星劇場" site_id="/premium/channel:628">衛星劇場</channel>
+    <channel lang="ja" xmltv_id="東映チャンネル" site_id="/premium/channel:629">東映チャンネル</channel>
+    <channel lang="ja" xmltv_id="ＷＯＷＯＷプラス" site_id="/premium/channel:630">ＷＯＷＯＷプラス</channel>
+    <channel lang="ja" xmltv_id="ザ・シネマ" site_id="/premium/channel:631">ザ・シネマ</channel>
+    <channel lang="ja" xmltv_id="ムービープラス" site_id="/premium/channel:632">ムービープラス</channel>
+    <channel lang="ja" xmltv_id="映画・チャンネルNECO" site_id="/premium/channel:633">映画・チャンネルNECO</channel>
+    <channel lang="ja" xmltv_id="日本映画専門チャンネル" site_id="/premium/channel:634">日本映画専門チャンネル</channel>
+    <channel lang="ja" xmltv_id="Ｖ☆パラダイス" site_id="/premium/channel:635">Ｖ☆パラダイス</channel>
+    <channel lang="ja" xmltv_id="エキサイティング・グランプリ" site_id="/premium/channel:636">エキサイティング・グランプリ</channel>
+    <channel lang="ja" xmltv_id="J SPORTS 1" site_id="/premium/channel:603">J SPORTS 1</channel>
+    <channel lang="ja" xmltv_id="J SPORTS 2" site_id="/premium/channel:604">J SPORTS 2</channel>
+    <channel lang="ja" xmltv_id="J SPORTS 4" site_id="/premium/channel:605">J SPORTS 4</channel>
+    <channel lang="ja" xmltv_id="J SPORTS 3" site_id="/premium/channel:606">J SPORTS 3</channel>
+    <channel lang="ja" xmltv_id="スポーツライブ＋" site_id="/premium/channel:580">スポーツライブ＋</channel>
+    <channel lang="ja" xmltv_id="スポーツライブ＋ ２" site_id="/premium/channel:584">スポーツライブ＋ ２</channel>
+    <channel lang="ja" xmltv_id="ＦＩＧＨＴＩＮＧ　ＴＶ　サムライ" site_id="/premium/channel:600">ＦＩＧＨＴＩＮＧ　ＴＶ　サムライ</channel>
+    <channel lang="ja" xmltv_id="ゴルフネットワーク" site_id="/premium/channel:601">ゴルフネットワーク</channel>
+    <channel lang="ja" xmltv_id="ＧＡＯＲＡ　ＳＰＯＲＴＳ" site_id="/premium/channel:602">ＧＡＯＲＡ　ＳＰＯＲＴＳ</channel>
+    <channel lang="ja" xmltv_id="スカイＡ" site_id="/premium/channel:607">スカイＡ</channel>
+    <channel lang="ja" xmltv_id="刺激ストロングチャンネル" site_id="/premium/channel:609">刺激ストロングチャンネル</channel>
+    <channel lang="ja" xmltv_id="ダンスチャンネル" site_id="/premium/channel:665">ダンスチャンネル</channel>
+    <channel lang="ja" xmltv_id="フジテレビＮＥＸＴ" site_id="/premium/channel:613">フジテレビＮＥＸＴ</channel>
+    <channel lang="ja" xmltv_id="フジテレビＯＮＥ" site_id="/premium/channel:614">フジテレビＯＮＥ</channel>
+    <channel lang="ja" xmltv_id="フジテレビＴＷＯ" site_id="/premium/channel:615">フジテレビＴＷＯ</channel>
+    <channel lang="ja" xmltv_id="ディズニー･チャンネル" site_id="/premium/channel:620">ディズニー･チャンネル</channel>
+    <channel lang="ja" xmltv_id="ディズニージュニア" site_id="/premium/channel:672">ディズニージュニア</channel>
+    <channel lang="ja" xmltv_id="ＴＢＳチャンネル１" site_id="/premium/channel:616">ＴＢＳチャンネル１</channel>
+    <channel lang="ja" xmltv_id="ＴＢＳチャンネル２" site_id="/premium/channel:617">ＴＢＳチャンネル２</channel>
+    <channel lang="ja" xmltv_id="テレ朝チャンネル１" site_id="/premium/channel:611">テレ朝チャンネル１</channel>
+    <channel lang="ja" xmltv_id="テレ朝チャンネル２" site_id="/premium/channel:612">テレ朝チャンネル２</channel>
+    <channel lang="ja" xmltv_id="日テレNEWS24" site_id="/premium/channel:571">日テレNEWS24</channel>
+    <channel lang="ja" xmltv_id="日テレジータス" site_id="/premium/channel:608">日テレジータス</channel>
+    <channel lang="ja" xmltv_id="日テレプラス" site_id="/premium/channel:619">日テレプラス</channel>
+    <channel lang="ja" xmltv_id="エンタメ～テレ" site_id="/premium/channel:618">エンタメ～テレ</channel>
+    <channel lang="ja" xmltv_id="チャンネル銀河" site_id="/premium/channel:664">チャンネル銀河</channel>
+    <channel lang="ja" xmltv_id="スペースシャワーＴＶ" site_id="/premium/channel:642">スペースシャワーＴＶ</channel>
+    <channel lang="ja" xmltv_id="スペースシャワーTV プラス" site_id="/premium/channel:643">スペースシャワーTV プラス</channel>
+    <channel lang="ja" xmltv_id="ミュージック・エア" site_id="/premium/channel:638">ミュージック・エア</channel>
+    <channel lang="ja" xmltv_id="ミュージック・ジャパンTV" site_id="/premium/channel:639">ミュージック・ジャパンTV</channel>
+    <channel lang="ja" xmltv_id="ＭＴＶ" site_id="/premium/channel:640">ＭＴＶ</channel>
+    <channel lang="ja" xmltv_id="ＭＵＳＩＣ　ＯＮ！　ＴＶ" site_id="/premium/channel:641">ＭＵＳＩＣ　ＯＮ！　ＴＶ</channel>
+    <channel lang="ja" xmltv_id="歌謡ポップスチャンネル" site_id="/premium/channel:644">歌謡ポップスチャンネル</channel>
+    <channel lang="ja" xmltv_id="ミュージック・グラフィティＴＶ" site_id="/premium/channel:645">ミュージック・グラフィティＴＶ</channel>
+    <channel lang="ja" xmltv_id="スーパー！ドラマＴＶ" site_id="/premium/channel:647">スーパー！ドラマＴＶ</channel>
+    <channel lang="ja" xmltv_id="ＡＸＮミステリー" site_id="/premium/channel:649">ＡＸＮミステリー</channel>
+    <channel lang="ja" xmltv_id="ＡＸＮ　海外ドラマ" site_id="/premium/channel:650">ＡＸＮ　海外ドラマ</channel>
+    <channel lang="ja" xmltv_id="ＦＯＸ" site_id="/premium/channel:651">ＦＯＸ</channel>
+    <channel lang="ja" xmltv_id="ＬａＬａ　ＴＶ" site_id="/premium/channel:654">ＬａＬａ　ＴＶ</channel>
+    <channel lang="ja" xmltv_id="アジアドラマチックＴＶ" site_id="/premium/channel:655">アジアドラマチックＴＶ</channel>
+    <channel lang="ja" xmltv_id="ＫＢＳ　Ｗｏｒｌｄ" site_id="/premium/channel:656">ＫＢＳ　Ｗｏｒｌｄ</channel>
+    <channel lang="ja" xmltv_id="ＫＮＴＶ" site_id="/premium/channel:657">ＫＮＴＶ</channel>
+    <channel lang="ja" xmltv_id="Ｍｎｅｔ" site_id="/premium/channel:658">Ｍｎｅｔ</channel>
+    <channel lang="ja" xmltv_id="大人のイキヌキ！ヌーヴェルパラダイス" site_id="/premium/channel:535">大人のイキヌキ！ヌーヴェルパラダイス</channel>
+    <channel lang="ja" xmltv_id="ＭＯＮＤＯ　ＴＶ" site_id="/premium/channel:659">ＭＯＮＤＯ　ＴＶ</channel>
+    <channel lang="ja" xmltv_id="ファミリー劇場" site_id="/premium/channel:660">ファミリー劇場</channel>
+    <channel lang="ja" xmltv_id="ホームドラマチャンネル" site_id="/premium/channel:661">ホームドラマチャンネル</channel>
+    <channel lang="ja" xmltv_id="時代劇専門チャンネル" site_id="/premium/channel:662">時代劇専門チャンネル</channel>
+    <channel lang="ja" xmltv_id="アイドル専門チャンネルＰｉｇｏｏ" site_id="/premium/channel:663">アイドル専門チャンネルＰｉｇｏｏ</channel>
+    <channel lang="ja" xmltv_id="アニメシアターＸ" site_id="/premium/channel:667">アニメシアターＸ</channel>
+    <channel lang="ja" xmltv_id="カートゥーン ネットワーク" site_id="/premium/channel:668">カートゥーン ネットワーク</channel>
+    <channel lang="ja" xmltv_id="キッズステーション" site_id="/premium/channel:669">キッズステーション</channel>
+    <channel lang="ja" xmltv_id="アニマックス" site_id="/premium/channel:670">アニマックス</channel>
+    <channel lang="ja" xmltv_id="ヒストリーチャンネル" site_id="/premium/channel:674">ヒストリーチャンネル</channel>
+    <channel lang="ja" xmltv_id="ナショナル　ジオグラフィック" site_id="/premium/channel:675">ナショナル　ジオグラフィック</channel>
+    <channel lang="ja" xmltv_id="ディスカバリーチャンネル" site_id="/premium/channel:676">ディスカバリーチャンネル</channel>
+    <channel lang="ja" xmltv_id="アニマルプラネット" site_id="/premium/channel:677">アニマルプラネット</channel>
+    <channel lang="ja" xmltv_id="CNNj" site_id="/premium/channel:566">CNNj</channel>
+    <channel lang="ja" xmltv_id="CNN U.S." site_id="/premium/channel:567">CNN U.S.</channel>
+    <channel lang="ja" xmltv_id="SORA ‐お天気チャンネル‐" site_id="/premium/channel:560">SORA ‐お天気チャンネル‐</channel>
+    <channel lang="ja" xmltv_id="ＢＢＣワールドニュース" site_id="/premium/channel:565">ＢＢＣワールドニュース</channel>
+    <channel lang="ja" xmltv_id="中国テレビ★大富チャンネル" site_id="/premium/channel:568">中国テレビ★大富チャンネル</channel>
+    <channel lang="ja" xmltv_id="日経ＣＮＢＣ" site_id="/premium/channel:570">日経ＣＮＢＣ</channel>
+    <channel lang="ja" xmltv_id="ＴＢＳ　ＮＥＷＳ" site_id="/premium/channel:572">ＴＢＳ　ＮＥＷＳ</channel>
+    <channel lang="ja" xmltv_id="パチンコ★パチスロＴＶ！" site_id="/premium/channel:536">パチンコ★パチスロＴＶ！</channel>
+    <channel lang="ja" xmltv_id="パチ・スロ　サイトセブンＴＶ" site_id="/premium/channel:537">パチ・スロ　サイトセブンＴＶ</channel>
+    <channel lang="ja" xmltv_id="釣りビジョンＨＤ" site_id="/premium/channel:540">釣りビジョンＨＤ</channel>
+    <channel lang="ja" xmltv_id="寄席チャンネル" site_id="/premium/channel:542">寄席チャンネル</channel>
+    <channel lang="ja" xmltv_id="旅チャンネル" site_id="/premium/channel:544">旅チャンネル</channel>
+    <channel lang="ja" xmltv_id="鉄道チャンネル" site_id="/premium/channel:546">鉄道チャンネル</channel>
+    <channel lang="ja" xmltv_id="ベターライフチャンネル" site_id="/premium/channel:529">ベターライフチャンネル</channel>
+    <channel lang="ja" xmltv_id="囲碁・将棋チャンネル" site_id="/premium/channel:521">囲碁・将棋チャンネル</channel>
+    <channel lang="ja" xmltv_id="グリーンチャンネル" site_id="/premium/channel:688">グリーンチャンネル</channel>
+    <channel lang="ja" xmltv_id="グリーンチャンネル２" site_id="/premium/channel:689">グリーンチャンネル２</channel>
+    <channel lang="ja" xmltv_id="ＪＬＣ" site_id="/premium/channel:680">ＪＬＣ</channel>
+    <channel lang="ja" xmltv_id="ＳＰＥＥＤチャンネル" site_id="/premium/channel:690">ＳＰＥＥＤチャンネル</channel>
+    <channel lang="ja" xmltv_id="南関東地方競馬チャンネル" site_id="/premium/channel:678">南関東地方競馬チャンネル</channel>
+    <channel lang="ja" xmltv_id="地方競馬ナイン" site_id="/premium/channel:701">地方競馬ナイン</channel>
+    <channel lang="ja" xmltv_id="フェニックステレビ（鳳凰衛視）" site_id="/premium/channel:518">フェニックステレビ（鳳凰衛視）</channel>
+    <channel lang="ja" xmltv_id="ショップチャンネル" site_id="/premium/channel:523">ショップチャンネル</channel>
+    <channel lang="ja" xmltv_id="ＱＶＣ（キューヴィーシー）" site_id="/premium/channel:525">ＱＶＣ（キューヴィーシー）</channel>
+    <channel lang="ja" xmltv_id="ジュエリー☆ＧＳＴＶ" site_id="/premium/channel:527">ジュエリー☆ＧＳＴＶ</channel>
+    <channel lang="ja" xmltv_id="セレクトショッピング" site_id="/premium/channel:528">セレクトショッピング</channel>
+    <channel lang="ja" xmltv_id="ｋｍｐチャンネル" site_id="/premium/channel:942">ｋｍｐチャンネル</channel>
+    <channel lang="ja" xmltv_id="プレイボーイ　チャンネル" site_id="/premium/channel:943">プレイボーイ　チャンネル</channel>
+    <channel lang="ja" xmltv_id="レインボーチャンネル" site_id="/premium/channel:944">レインボーチャンネル</channel>
+    <channel lang="ja" xmltv_id="ミッドナイト・ブルー" site_id="/premium/channel:945">ミッドナイト・ブルー</channel>
+    <channel lang="ja" xmltv_id="パラダイステレビ" site_id="/premium/channel:946">パラダイステレビ</channel>
+    <channel lang="ja" xmltv_id="チェリーボム" site_id="/premium/channel:947">チェリーボム</channel>
+    <channel lang="ja" xmltv_id="ＶＥＮＵＳ" site_id="/premium/channel:957">ＶＥＮＵＳ</channel>
+    <channel lang="ja" xmltv_id="バニラスカイチャンネル" site_id="/premium/channel:958">バニラスカイチャンネル</channel>
+    <channel lang="ja" xmltv_id="エンタ！９５９" site_id="/premium/channel:959">エンタ！９５９</channel>
+    <channel lang="ja" xmltv_id="Zaptv" site_id="/premium/channel:960">Zaptv</channel>
+    <channel lang="ja" xmltv_id="ダイナマイトＴＶ" site_id="/premium/channel:963">ダイナマイトＴＶ</channel>
+    <channel lang="ja" xmltv_id="ＡＶ王" site_id="/premium/channel:964">ＡＶ王</channel>
+    <channel lang="ja" xmltv_id="レッドチェリー" site_id="/premium/channel:965">レッドチェリー</channel>
+    <channel lang="ja" xmltv_id="Splash" site_id="/premium/channel:966">Splash</channel>
+    <channel lang="ja" xmltv_id="フラミンゴ" site_id="/premium/channel:967">フラミンゴ</channel>
+</channels>
+</site>
