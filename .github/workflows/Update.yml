@@ -13,12 +13,12 @@ jobs:
     - name: Update
       run: |
         # 央视源
-        rm -f CCTV.m3u && wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u -O CCTV.m3u
+        rm -f CCTV.m3u && wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O CCTV.m3u
         sed -i -n '/央视/,+1p' CCTV.m3u
         sed -i '1i #EXTM3U' CCTV.m3u
         sed -i '/^\s*$/d' CCTV.m3u
         # 卫视源
-        rm -f CNTV.m3u && wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u -O CNTV.m3u
+        rm -f CNTV.m3u && wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O CNTV.m3u
         sed -i '/央视/,+1d' CNTV.m3u
         sed -i '/^\s*$/d' CNTV.m3u
         # 成人源
