@@ -1,0 +1,218 @@
+name: EPG
+
+on:
+  schedule:
+    - cron: '40 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install jq (for parsing JSON)
+        run: sudo apt-get install -y jq
+
+      - name: Download files from files.json
+        env:
+          DOWNLOAD_PROXY: ${{ secrets.DOWNLOAD_PROXY }}
+        run: |
+          sudo sed -i 's|http://.*.ubuntu.com|http://archive.ubuntu.com|g' /etc/apt/sources.list
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils file
+
+          mkdir -p epg
+          FAILED_FILES=""
+
+          while read -r filename url; do
+            source_url="$url"
+            request_url="$url"
+
+            if [[ "$url" == proxy:* ]]; then
+              source_url="${url#proxy:}"
+
+              if [ -z "$DOWNLOAD_PROXY" ]; then
+                echo "下载失败：$filename（未配置 secrets.DOWNLOAD_PROXY）"
+                FAILED_FILES="$FAILED_FILES\n$filename（未配置代理 secrets）"
+                continue
+              fi
+
+              encoded_source_url=$(printf '%s' "$source_url" | jq -sRr @uri)
+              request_url="${DOWNLOAD_PROXY}${encoded_source_url}"
+              echo "Downloading $filename from $source_url (via proxy)"
+            else
+              echo "Downloading $filename from $source_url"
+            fi
+
+            xml_file="epg/$filename"
+            xml_tmp="$xml_file.tmp"
+            raw_tmp="$xml_file.raw"
+            HTTP_CODE=0
+
+            HTTP_CODE=$(curl -k --retry 5 \
+              -w "%{http_code}" -o "$raw_tmp" "$request_url" || echo 0)
+
+            # HTTP 状态码判断（带24小时容错）
+            if [ "$HTTP_CODE" != "200" ]; then
+              LAST_COMMIT_TS=$(git log -1 --format=%ct -- "$xml_file" 2>/dev/null || echo 0)
+              NOW_TS=$(date +%s)
+            
+              if [ "$LAST_COMMIT_TS" -gt 0 ]; then
+                HOURS=$(( (NOW_TS - LAST_COMMIT_TS) / 3600 ))
+              else
+                HOURS=9999
+              fi
+            
+              if [ "$HOURS" -le 24 ]; then
+                echo "下载失败（忽略）：$filename（HTTP $HTTP_CODE，${HOURS}小时内更新过）"
+                rm -f "$raw_tmp"
+                continue
+              fi
+            
+              echo "下载失败：$filename（HTTP $HTTP_CODE，已${HOURS}小时未更新）"
+              FAILED_FILES="$FAILED_FILES\n$filename（HTTP $HTTP_CODE，已${HOURS}小时未更新）"
+              rm -f "$raw_tmp"
+              continue
+            fi
+
+            # 自动识别并解压
+            mime_type=$(file -b --mime-type "$raw_tmp")
+            
+            if [[ "$mime_type" == "application/gzip" || "$mime_type" == "application/x-gzip" ]]; then
+              echo "检测到 GZIP 格式，正在解压..."
+              # 解压并输出到 xml_tmp (原逻辑需要的纯文本文件)
+              gunzip -c "$raw_tmp" > "$xml_tmp"
+            else
+              echo "检测为普通文本，直接处理..."
+              mv "$raw_tmp" "$xml_tmp"
+            fi
+            # 清理原始下载文件
+            rm -f "$raw_tmp"
+
+            # epg.pw 时区修正
+            if [[ "$source_url" == *"epg.pw"* ]]; then
+              sed -i 's/+0000/+0800/g' "$xml_tmp"
+            fi
+
+            # XML 校验
+            if ! xmllint --noout "$xml_tmp" 2>/dev/null; then
+              echo "XML 无效：$filename"
+              FAILED_FILES="$FAILED_FILES\n$filename（XML 无效）"
+              rm -f "$xml_tmp"
+              continue
+            fi
+
+            # 内容变化才覆盖
+            if [ ! -f "$xml_file" ] || ! cmp -s "$xml_tmp" "$xml_file"; then
+              mv "$xml_tmp" "$xml_file"
+              gzip -kf "$xml_file"
+            else
+              rm -f "$xml_tmp"
+            fi
+          done  < <(jq -r 'to_entries[] | "\(.key) \(.value)"' files.json)
+
+          if [ -n "$FAILED_FILES" ]; then
+            echo "HAS_FAILED=true" >> $GITHUB_ENV
+            echo "FAILED_FILES<<EOF" >> $GITHUB_ENV
+            echo -e "$FAILED_FILES" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          else
+            echo "HAS_FAILED=false" >> $GITHUB_ENV
+          fi
+
+          cat files.json | jq -r 'keys[]' | while read -r filename; do
+            echo "FILENAME_$filename=epg/$filename" >> $GITHUB_ENV
+            echo "FILENAME_${filename%.xml}.gz=epg/${filename%.xml}.gz" >> $GITHUB_ENV
+          done
+
+      - name: Check EPG files update time
+        run: |
+          THRESHOLD_DAYS=3
+          NOW=$(date +%s)
+          EXPIRED_FILES=""
+
+          for f in epg/*; do
+            [ -f "$f" ] || continue
+
+            LAST_COMMIT_TS=$(git log -1 --format=%ct -- "$f" 2>/dev/null || echo 0)
+
+            [ "$LAST_COMMIT_TS" -eq 0 ] && continue
+
+            DAYS=$(( (NOW - LAST_COMMIT_TS) / 86400 ))
+
+            if [ "$DAYS" -ge "$THRESHOLD_DAYS" ]; then
+              EXPIRED_FILES="$EXPIRED_FILES\n$(basename "$f")（${DAYS}天未更新）"
+            fi
+          done
+
+          if [ -n "$EXPIRED_FILES" ]; then
+            echo "HAS_EXPIRED=true" >> $GITHUB_ENV
+            echo "EXPIRED_FILES<<EOF" >> $GITHUB_ENV
+            echo -e "$EXPIRED_FILES" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          else
+            echo "HAS_EXPIRED=false" >> $GITHUB_ENV
+          fi
+
+      - name: Send WeCom notification
+        if: env.HAS_FAILED == 'true' || env.HAS_EXPIRED == 'true'
+        run: |
+          TZ='Asia/Shanghai'
+          TODAY=$(date '+%Y-%m-%d')
+          LOCK_FILE=".notify_lock"
+
+          if [ -f "$LOCK_FILE" ] && grep -q "$TODAY" "$LOCK_FILE"; then
+            echo "今天已提醒过，跳过通知"
+            exit 0
+          fi
+
+          TOKEN=$(curl -s "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${{ secrets.WECOM_CID }}&corpsecret=${{ secrets.WECOM_SECRET }}" \
+            | grep -oP '"access_token":"\K[^"]+')
+
+          MSG="⚠️ EPG 异常提醒"
+
+          if [ "${HAS_FAILED}" = "true" ]; then
+            MSG="$MSG\n\n下载 / XML 异常文件：\n${FAILED_FILES}"
+          fi
+
+          if [ "${HAS_EXPIRED}" = "true" ]; then
+            MSG="$MSG\n\n超过 3 天未更新文件：\n${EXPIRED_FILES}"
+          fi
+
+          MSG="$MSG\n\n检查时间：$(date '+%Y-%m-%d %H:%M:%S')"
+
+          curl -s -X POST "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=$TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "touser": "'${{ secrets.WECOM_TOUID }}'",
+            "msgtype": "text",
+            "agentid": "'${{ secrets.WECOM_AGENT_ID }}'",
+            "text": { "content": "'"$MSG"'" },
+            "safe": 0
+          }'
+
+          echo "$TODAY" > "$LOCK_FILE"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add epg/* .notify_lock
+          if ! git diff --cached --quiet; then
+            now_time=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+            git commit -m "更新时间：$now_time"
+            git push origin main || echo "推送到 GitHub 失败"
+          else
+            echo "没有文件可提交"
+          fi
+
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          repository: atsushi444/iptv-epg
+          event-type: sync
