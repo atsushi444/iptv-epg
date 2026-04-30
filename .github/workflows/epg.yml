@@ -157,6 +157,58 @@ jobs:
             echo "HAS_EXPIRED=false" >> $GITHUB_ENV
           fi
 
+      - name: Send WeCom notification
+        if: env.HAS_FAILED == 'true' || env.HAS_EXPIRED == 'true'
+        run: |
+          TZ='Asia/Shanghai'
+          TODAY=$(date '+%Y-%m-%d')
+          LOCK_FILE=".notify_lock"
+
+          if [ -f "$LOCK_FILE" ] && grep -q "$TODAY" "$LOCK_FILE"; then
+            echo "今天已提醒过，跳过通知"
+            exit 0
+          fi
+
+          TOKEN=$(curl -s "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${{ secrets.WECOM_CID }}&corpsecret=${{ secrets.WECOM_SECRET }}" \
+            | grep -oP '"access_token":"\K[^"]+')
+
+          MSG="⚠️ EPG 异常提醒"
+
+          if [ "${HAS_FAILED}" = "true" ]; then
+            MSG="$MSG\n\n下载 / XML 异常文件：\n${FAILED_FILES}"
+          fi
+
+          if [ "${HAS_EXPIRED}" = "true" ]; then
+            MSG="$MSG\n\n超过 3 天未更新文件：\n${EXPIRED_FILES}"
+          fi
+
+          MSG="$MSG\n\n检查时间：$(date '+%Y-%m-%d %H:%M:%S')"
+
+          curl -s -X POST "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=$TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "touser": "'${{ secrets.WECOM_TOUID }}'",
+            "msgtype": "text",
+            "agentid": "'${{ secrets.WECOM_AGENT_ID }}'",
+            "text": { "content": "'"$MSG"'" },
+            "safe": 0
+          }'
+
+          echo "$TODAY" > "$LOCK_FILE"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add epg/* .notify_lock
+          if ! git diff --cached --quiet; then
+            now_time=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+            git commit -m "更新时间：$now_time"
+            git push origin main || echo "推送到 GitHub 失败"
+          else
+            echo "没有文件可提交"
+          fi
      
 
      
