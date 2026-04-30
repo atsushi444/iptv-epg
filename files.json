@@ -1,7 +1,5 @@
 {
-  "51zmt.xml": "proxy:http://epg.51zmt.top:8000/e.xml",
-  "51zmte1.xml": "http://epg.51zmt.top:8000/e1.xml.gz",
-  "51zmte2.xml": "http://epg.51zmt.top:8000/e2.xml.gz",
+  "51zmt.xml": "http://epg.51zmt.top:8000/e.xml",
   "epgpw_all.xml": "https://epg.pw/xmltv/epg.xml.gz",
   "epgpw_cn.xml": "https://epg.pw/xmltv/epg_CN.xml.gz",
   "epgpw_hk.xml": "https://epg.pw/xmltv/epg_HK.xml.gz",
