@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="tvguide.myjcom.jp">
+  <channels>
+    <channel lang="ja" xmltv_id="Star1" site_id="120_200_4">スターチャンネル1</channel>
+    <channel lang="ja" xmltv_id="Star2" site_id="120_201_4">スターチャンネル2</channel>
+    <channel lang="ja" xmltv_id="Star3" site_id="120_202_4">スターチャンネル3</channel>
+    <channel lang="ja" xmltv_id="StarD" site_id="120_032_65406">スターチャンネルD</channel>
+    <channel lang="ja" xmltv_id="TheCinema4K" site_id="120_418_65527">ザ・シネマ４Ｋ</channel>
+    <channel lang="ja" xmltv_id="NihonJidai4K" site_id="120_419_65527">日本映画＋時代劇 4K</channel>
+    <channel lang="ja" xmltv_id="MoviePlus" site_id="120_122_65534">ムービープラス</channel>
+    <channel lang="ja" xmltv_id="WowowPlus" site_id="120_155_65406">WOWOWプラス</channel>
+    <channel lang="ja" xmltv_id="TheCinema" site_id="120_133_65534">ザ・シネマ</channel>
+    <channel lang="ja" xmltv_id="ChannelNeco" site_id="120_151_65406">映画･チャンネルNECO</channel>
+    <channel lang="ja" xmltv_id="NihonEigaSenmonChannel" site_id="120_125_65534">日本映画専門チャンネル</channel>
+    <channel lang="ja" xmltv_id="JidaigekiSenmonChannel" site_id="120_159_65406">時代劇専門チャンネル</channel>
+    <channel lang="ja" xmltv_id="ToeiChannel" site_id="120_173_65406">東映チャンネル</channel>
+    <channel lang="ja" xmltv_id="EiseiGekijo" site_id="120_127_65406">衛星劇場</channel>
+    <channel lang="ja" xmltv_id="Vparadise" site_id="120_195_65406">V☆パラダイス</channel>
+    <channel lang="ja" xmltv_id="SkyA" site_id="120_147_65406">スカイA</channel>
+    <channel lang="ja" xmltv_id="FightingTVSamurai" site_id="120_128_65406">FIGHTING TV サムライ</channel>
+    <channel lang="ja" xmltv_id="GaoraSports" site_id="120_146_65406">GAORA SPORTS</channel>
+    <channel lang="ja" xmltv_id="GolfNetwork" site_id="120_167_65406">ゴルフネットワーク</channel>
+    <channel lang="ja" xmltv_id="NitteleGPlus" site_id="120_166_65406">日テレジータス</channel>
+    <channel lang="ja" xmltv_id="JSports1" site_id="120_168_65406">J SPORTS 1</channel>
+    <channel lang="ja" xmltv_id="JSports2" site_id="120_169_65406">J SPORTS 2</channel>
+    <channel lang="ja" xmltv_id="JSports3" site_id="120_158_65406">J SPORTS 3</channel>
+    <channel lang="ja" xmltv_id="JSports4" site_id="120_132_65534">J SPORTS 4</channel>
+    <channel lang="ja" xmltv_id="SportsLivePlus" site_id="120_106_65406">スポーツライブ＋</channel>
+    <channel lang="ja" xmltv_id="JSports1(4K)" site_id="120_412_65527">JSPORTS1 (4K)</channel>
+    <channel lang="ja" xmltv_id="JSports2(4K)" site_id="120_413_65527">JSPORTS2 (4K)</channel>
+    <channel lang="ja" xmltv_id="JSports3(4K)" site_id="120_414_65527">JSPORTS3 (4K)</channel>
+    <channel lang="ja" xmltv_id="JSports4(4K)" site_id="120_415_65527">JSPORTS4 (4K)</channel>
+    <channel lang="ja" xmltv_id="GreenChannel" site_id="120_164_65406">グリーンチャンネル</channel>
+    <channel lang="ja" xmltv_id="GreenChannel2" site_id="120_165_65406">グリーンチャンネル2</channel>
+    <channel lang="ja" xmltv_id="JLC" site_id="120_287_65534">レジャーチャンネル</channel>
+    <channel lang="ja" xmltv_id="SpeedChannel" site_id="120_288_65406">SPEEDチャンネル</channel>
+    <channel lang="ja" xmltv_id="SpaceShowerTV" site_id="120_156_65406">スペースシャワーTV</channel>
+    <channel lang="ja" xmltv_id="MusicOnTV" site_id="120_162_65406">MUSIC ON! TV</channel>
+    <channel lang="ja" xmltv_id="MTVJapan" site_id="120_150_65406">MTV</channel>
+    <channel lang="ja" xmltv_id="KayoPops" site_id="120_175_65406">歌謡ポップスチャンネル</channel>
+    <channel lang="ja" xmltv_id="MusicAir" site_id="120_161_65406">ミュージック・エア</channel>
+    <channel lang="ja" xmltv_id="SpaceShowerTVPlus" site_id="120_265_65406">スペースシャワーTVプラス</channel>
+    <channel lang="ja" xmltv_id="SuperDramaTV" site_id="120_124_65534">スーパー！ドラマTV</channel>
+    <channel lang="ja" xmltv_id="FoxJapan" site_id="120_131_65534">FOX</channel>
+    <channel lang="ja" xmltv_id="AsiaDramaticTV" site_id="120_126_65406">アジアドラマチックTV</channel>
+    <channel lang="ja" xmltv_id="ChannelGinga" site_id="120_135_65534">チャンネル銀河</channel>
+    <channel lang="ja" xmltv_id="TBSChannel1" site_id="120_144_65406">TBSチャンネル1</channel>
+    <channel lang="ja" xmltv_id="HomeDramaChannel" site_id="120_141_65406">ホームドラマチャンネル</channel>
+    <channel lang="ja" xmltv_id="TBSChannel2" site_id="120_176_65406">TBSチャンネル2</channel>
+    <channel lang="ja" xmltv_id="LaLaTV" site_id="120_123_65534">LaLa TV</channel>
+    <channel lang="ja" xmltv_id="FamilyGekijyo" site_id="120_157_65406">ファミリー劇場</channel>
+    <channel lang="ja" xmltv_id="AXNJapan" site_id="120_148_65406">AXN</channel>
+    <channel lang="ja" xmltv_id="AXNMystery" site_id="120_153_65406">AXNミステリー</channel>
+    <channel lang="ja" xmltv_id="Animax" site_id="120_149_65406">アニマックス</channel>
+    <channel lang="ja" xmltv_id="KidsStation" site_id="120_163_65406">キッズステーション</channel>
+    <channel lang="ja" xmltv_id="CartoonNetworkJapan" site_id="120_171_65406">カートゥーン ネットワーク</channel>
+    <channel lang="ja" xmltv_id="DisneyChannelJapan" site_id="120_183_65406">ディズニー・チャンネル</channel>
+    <channel lang="ja" xmltv_id="ATX" site_id="120_182_65406">アニメシアターX（AT-X）</channel>
+    <channel lang="ja" xmltv_id="DisneyJuniorJapan" site_id="120_130_65406">ディズニージュニア</channel>
+    <channel lang="ja" xmltv_id="WOWOWPrime" site_id="3_191_4">ＷＯＷＯＷプライム</channel>
+    <channel lang="ja" xmltv_id="Wowow4K" site_id="3_191_11">WOWOW 4K</channel>
+    <channel lang="ja" xmltv_id="WOWOWLive" site_id="3_192_4">ＷＯＷＯＷライブ</channel>
+    <channel lang="ja" xmltv_id="WOWOWCinema" site_id="3_193_4">ＷＯＷＯＷシネマ</channel>
+    <channel lang="ja" xmltv_id="MondoTV" site_id="120_160_65406">MONDOTV HD</channel>
+    <channel lang="ja" xmltv_id="FujiTVNext" site_id="120_137_65406">フジテレビＮＥＸＴ</channel>
+    <channel lang="ja" xmltv_id="FujiTVOne" site_id="120_138_65406">フジテレビＯＮＥ</channel>
+    <channel lang="ja" xmltv_id="FujiTVTwo" site_id="120_139_65406">フジテレビＴＷＯ</channel>
+    <channel lang="ja" xmltv_id="TVAsahiChannel1" site_id="120_136_65406">テレ朝チャンネル１</channel>
+    <channel lang="ja" xmltv_id="KBSWorldJapan" site_id="120_184_65406">KBS WORLD</channel>
+    <channel lang="ja" xmltv_id="NittelePlus" site_id="120_190_65406">日テレプラス</channel>
+    <channel lang="ja" xmltv_id="TVAsahiChannel2" site_id="120_188_65406">テレ朝チャンネル２</channel>
+    <channel lang="ja" xmltv_id="MnetJapan" site_id="120_181_65406">Mnet</channel>
+    <channel lang="ja" xmltv_id="TakarazukaSkyStage" site_id="120_154_65406">タカラヅカ・スカイ・ステージ</channel>
+    <channel lang="ja" xmltv_id="KNTV" site_id="120_174_65406">KNTV</channel>
+    <channel lang="ja" xmltv_id="Pachitele" site_id="120_191_65406">パチンコ★パチスロTV！</channel>
+    <channel lang="ja" xmltv_id="TABIChannel" site_id="120_143_65406">旅チャンネル</channel>
+    <channel lang="ja" xmltv_id="EntermeiTele" site_id="120_187_65406">エンタメ～テレ</channel>
+    <channel lang="ja" xmltv_id="TV5MondePacifique" site_id="120_104_65406">ＴＶ５ＭＯＮＤＥ</channel>
+    <channel lang="ja" xmltv_id="DanceChannel" site_id="120_105_65406">ダンスチャンネル</channel>
+    <channel lang="ja" xmltv_id="YoseChannel" site_id="120_170_65406">寄席チャンネル</channel>
+    <channel lang="ja" xmltv_id="PPVChoice940" site_id="120_035_65406">PPVチョイス940</channel>
+    <channel lang="ja" xmltv_id="PPVChoice941" site_id="120_036_65406">PPVチョイス941</channel>
+    <channel lang="ja" xmltv_id="PlayboyChannel" site_id="120_290_65534">プレイボーイ チャンネル</channel>
+    <channel lang="ja" xmltv_id="RedCherry" site_id="120_291_65534">レッドチェリー</channel>
+    <channel lang="ja" xmltv_id="MidnightBlue" site_id="120_293_65534">ミッドナイト・ブルー</channel>
+    <channel lang="ja" xmltv_id="ShopChannel" site_id="120_140_65406">ショップチャンネル</channel>
+    <channel lang="ja" xmltv_id="QVCJapan" site_id="120_172_65406">QVC </channel>
+    <channel lang="ja" xmltv_id="GSTV" site_id="120_192_65406">ジュエリー☆GSTV</channel>
+    <channel lang="ja" xmltv_id="ShopChannelPlus" site_id="120_129_65406">ショップチャンネル プラス</channel>
+    <channel lang="ja" xmltv_id="TBSNews" site_id="120_152_65406">ＴＢＳ ＮＥＷＳ</channel>
+    <channel lang="ja" xmltv_id="CCTVDaifu" site_id="120_227_65534">中国テレビ★大富チャンネル</channel>
+    <channel lang="ja" xmltv_id="CNNj" site_id="120_180_65406">CNNｊ</channel>
+    <channel lang="ja" xmltv_id="NikkeiCNBC" site_id="120_185_65406">日経CNBC</channel>
+    <channel lang="ja" xmltv_id="CNN" site_id="120_249_65406">CNN U.S.</channel>
+    <channel lang="ja" xmltv_id="NTVNews24" site_id="120_102_65406">日テレNEWS24</channel>
+    <channel lang="ja" xmltv_id="BBCWorldNewsAsiaPacific" site_id="120_257_65534">ＢＢＣワールドニュース</channel>
+    <channel lang="ja" xmltv_id="NHKWorldJapan" site_id="120_038_65406">NHKワールド JAPAN</channel>
+    <channel lang="ja" xmltv_id="Cable4K" site_id="120_411_65527">ケーブル４Ｋ</channel>
+    <channel lang="ja" xmltv_id="ShopChannel4K" site_id="120_416_65527">ショップチャンネル ４Ｋ</channel>
+    <channel lang="ja" xmltv_id="QVCJapan4K" site_id="120_417_65527">4Ｋ QVC</channel>
+    <channel lang="ja" xmltv_id="HistoryJapan" site_id="120_134_65534">ヒストリーチャンネル</channel>
+    <channel lang="ja" xmltv_id="NationalGeographicJapan" site_id="120_142_65406">ナショナル ジオグラフィック</channel>
+    <channel lang="ja" xmltv_id="DiscoveryChannelJapan" site_id="120_121_65534">ディスカバリーチャンネル</channel>
+    <channel lang="ja" xmltv_id="AnimalPlanetJapan" site_id="120_186_65406">アニマルプラネット</channel>
+    <channel lang="ja" xmltv_id="IgoShogiChannel" site_id="120_196_65406">囲碁・将棋チャンネル</channel>
+    <channel lang="ja" xmltv_id="FishingVision" site_id="120_145_65406">釣りビジョン</channel>
+    <channel lang="ja" xmltv_id="NHKGeneralTV" site_id="2_1024_32736">NHK東京　総合</channel>
+    <channel lang="ja" xmltv_id="NHKEducationalTV" site_id="2_1032_32737">NHK東京　教育</channel>
+    <channel lang="ja" xmltv_id="TVSaitama" site_id="2_29752_32295">テレビ埼玉</channel>
+    <channel lang="ja" xmltv_id="TVKanagawa" site_id="2_24632_32375">テレビ神奈川</channel>
+    <channel lang="ja" xmltv_id="NipponTV" site_id="2_1040_32738">日本テレビ</channel>
+    <channel lang="ja" xmltv_id="TVAsahi" site_id="2_1064_32741">テレビ朝日</channel>
+    <channel lang="ja" xmltv_id="JORXDTV" site_id="2_1048_32739">TBS</channel>
+    <channel lang="ja" xmltv_id="JOTXDTV" site_id="2_1072_32742">テレビ東京</channel>
+    <channel lang="ja" xmltv_id="JOCXDTV" site_id="2_1056_32740">フジテレビ</channel>
+    <channel lang="ja" xmltv_id="JOMXDTV" site_id="2_23608_32391">TOKYO　MX</channel>
+    <channel lang="ja" xmltv_id="JOIFDTV" site_id="2_56336_31874">KBC九州朝日</channel>
+    <channel lang="ja" xmltv_id="JOLIDTV" site_id="2_51224_31955">テレビ山口</channel>
+    <channel lang="ja" xmltv_id="JOFRDTV" site_id="2_56344_31875">RKB毎日</channel>
+    <channel lang="ja" xmltv_id="JOPFDTV" site_id="2_51216_31954">山口放送</channel>
+    <channel lang="ja" xmltv_id="JOFHDTV" site_id="2_56352_31876">FBS福岡</channel>
+    <channel lang="ja" xmltv_id="JOYXDTV" site_id="2_51232_31956">山口朝日放送</channel>
+    <channel lang="ja" xmltv_id="JOTYDTV" site_id="2_56360_31877">TVQ九州放送</channel>
+    <channel lang="ja" xmltv_id="JOJYDTV" site_id="2_56368_31878">TNCテレビ西日本</channel>
+    <channel lang="ja" xmltv_id="JOBFDTV" site_id="2_57360_31858">RKK熊本放送</channel>
+    <channel lang="ja" xmltv_id="JOQIDTV" site_id="2_57376_31860">KKTくまもと県民TV</channel>
+    <channel lang="ja" xmltv_id="JOZIDTV" site_id="2_57384_31861">KAB熊本朝日放送</channel>
+    <channel lang="ja" xmltv_id="JOZHDTV" site_id="2_57368_31859">TKUテレビ熊本</channel>
+    <channel lang="ja" xmltv_id="JOGFDTV" site_id="2_61456_31794">OBS大分放送</channel>
+    <channel lang="ja" xmltv_id="JOOIDTV" site_id="2_61464_31795">TOSテレビ大分</channel>
+    <channel lang="ja" xmltv_id="JOBXDTV" site_id="2_61472_31796">OAB大分朝日放送</channel>
+    <channel lang="ja" xmltv_id="JOUHDTV" site_id="2_43056_32086">サンテレビ</channel>
+    <channel lang="ja" xmltv_id="JOOYDTV" site_id="2_2064_32722">毎日テレビ</channel>
+    <channel lang="ja" xmltv_id="JOBRDTV" site_id="2_42032_32102">KBS京都</channel>
+    <channel lang="ja" xmltv_id="JOAYDTV" site_id="2_2072_32723">ABCテレビ</channel>
+    <channel lang="ja" xmltv_id="JOBHDTV" site_id="2_41008_32118">テレビ大阪</channel>
+    <channel lang="ja" xmltv_id="JODXDTV" site_id="2_2080_32724">関西テレビ</channel>
+    <channel lang="ja" xmltv_id="JOIXDTV" site_id="2_2088_32725">読売テレビ</channel>
+    <channel lang="ja" xmltv_id="JOOMDTV" site_id="2_44080_32070">テレビ和歌山</channel>
+    <channel lang="ja" xmltv_id="JOHRDTV" site_id="2_4112_32690">北海道放送</channel>
+    <channel lang="ja" xmltv_id="JOKXDTV" site_id="2_4120_32691">札幌テレビ</channel>
+    <channel lang="ja" xmltv_id="JOHHDTV" site_id="2_4128_32692">北海道テレビ</channel>
+    <channel lang="ja" xmltv_id="JOHIDTV" site_id="2_4144_32694">テレビ北海道</channel>
+    <channel lang="ja" xmltv_id="JOBMDTV" site_id="2_4136_32693">北海道文化放送</channel>
+    <channel lang="ja" xmltv_id="JOIRDTV" site_id="2_17424_32482">東北放送</channel>
+    <channel lang="ja" xmltv_id="JOMMDTV" site_id="2_17440_32484">ミヤギテレビ</channel>
+    <channel lang="ja" xmltv_id="JOEMDTV" site_id="2_17448_32485">東日本放送</channel>
+    <channel lang="ja" xmltv_id="JOOXDTV" site_id="2_17432_32483">仙台放送</channel>
+    <channel lang="ja" xmltv_id="JOMLDTV" site_id="2_25656_32359">群馬テレビ</channel>
+    <channel lang="ja" xmltv_id="JOCLDTV" site_id="2_27704_32327">チバテレビ</channel>
+    <channel lang="ja" xmltv_id="JCOMTV" site_id="200_00052_0">J:テレ</channel>
+    <channel lang="ja" xmltv_id="JCOMHigashiKanto" site_id="200_00021_0">J:COMチャンネル東京</channel>
+    <channel lang="ja" xmltv_id="JCOMPremierChannel" site_id="120_037_65406">J:COMプレミアチャンネル</channel>
+    <channel lang="ja" xmltv_id="NHKBS1" site_id="3_101_4">ＮＨＫＢＳ１</channel>
+    <channel lang="ja" xmltv_id="NHKBSPremium" site_id="3_103_4">ＮＨＫＢＳプレミアム</channel>
+    <channel lang="ja" xmltv_id="BSNipponTV" site_id="3_141_4">ＢＳ日テレ</channel>
+    <channel lang="ja" xmltv_id="BSAsahi" site_id="3_151_4">ＢＳ朝日</channel>
+    <channel lang="ja" xmltv_id="BSTBS" site_id="3_161_4">ＢＳ－ＴＢＳ</channel>
+    <channel lang="ja" xmltv_id="BSTVTokyo" site_id="3_171_4">BSテレ東</channel>
+    <channel lang="ja" xmltv_id="BSFuji" site_id="3_181_4">ＢＳフジ</channel>
+    <channel lang="ja" xmltv_id="BS11" site_id="3_211_4">BS11 イレブン</channel>
+    <channel lang="ja" xmltv_id="BS12" site_id="120_203_65406">BS12 トゥエルビ</channel>
+    <channel lang="ja" xmltv_id="BSShochikuTokyu" site_id="120_103_65406">ＢＳ松竹東急</channel>
+    <channel lang="ja" xmltv_id="BSYoshimoto" site_id="120_179_65406">BSよしもと</channel>
+    <channel lang="ja" xmltv_id="NHKBS4K" site_id="3_101_11">NHK BS4K</channel>
+    <channel lang="ja" xmltv_id="BSNipponTV4K" site_id="3_141_11">BS日テレ 4K</channel>
+    <channel lang="ja" xmltv_id="BSAsahi4K" site_id="3_151_11">BS朝日 4K</channel>
+    <channel lang="ja" xmltv_id="BSTBS4K" site_id="3_161_11">BS-TBS 4K</channel>
+    <channel lang="ja" xmltv_id="BSTVTokyo4K" site_id="3_171_11">BSテレ東 4K</channel>
+    <channel lang="ja" xmltv_id="BSFuji4K" site_id="3_181_11">BSフジ 4K</channel>
+  </channels>
+</site>
